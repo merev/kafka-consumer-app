@@ -3,8 +3,8 @@ from kafka import KafkaConsumer
 print('Consumer started. Press Ctrl+C to stop.')
 
 try:
-    consumer = KafkaConsumer(bootstrap_servers=['broker:9092'])
-    consumer.subscribe(['demo4'])
+    consumer = KafkaConsumer(bootstrap_servers=['broker:29092'])
+    consumer.subscribe(['demo'])
     for message in consumer:
         print(message)
 except Exception as ex:
